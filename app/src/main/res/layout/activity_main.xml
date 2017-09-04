@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+
+    tools:context="lifesaver.example.nikhil.lineequation.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:background="?android:attr/editTextColor">
+
+
+    <TextView
+        android:text="Enter angle and magnitude"
+        android:layout_width="350dp"
+        android:layout_below="@+id/graph"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="152dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_weight="0.09"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:id="@+id/slope"
+        android:hint="angle"
+        android:textColorLink="?android:attr/colorPrimary"
+        android:textColorHint="?attr/colorPrimary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/constant"
+
+        android:hint="magnitude"
+        android:textColorHint="?attr/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="0.09"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0.09"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="SetPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:id="@+id/graphView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_height="500dp" />
+
+
+</LinearLayout>
+
+</ScrollView>
